@@ -4,10 +4,10 @@ A command-line budget management application built in C++ that allows users to t
 ---
 
 ## **Features**
-	- **Add Income:**	Record income with a specific description and amount.
-	- **Add Expense:** Record expenses with descriptions and amounts.
-	- **View Transactions:** View all recorded incomes and expenses in a clear format.
-	- **Edit Transaction:** Modify existing transactions (income or expense).
-	- **Delete Transaction:** Remove any transaction from the list.
-	- **View Summary:** Displays total income, total expenses, and the remaining balance.
-	- **Save and Load Data:** Transactions are saved to a file for persistence across sessions.
+- **Add Income:** Record income with a specific description and amount.
+- **Add Expense:** Record expenses with descriptions and amounts.
+- **View Transactions:** View all recorded incomes and expenses in a clear format.
+- **Edit Transaction:** Modify existing transactions (income or expense).
+- **Delete Transaction:** Remove any transaction from the list.
+- **View Summary:** Displays total income, total expenses, and the remaining balance.
+- **Save and Load Data:** Transactions are saved to a file for persistence across sessions.
