@@ -279,6 +279,14 @@ public:
         cout << "Total Expenses: $" << totalExpense << endl;
         cout << "Savings: $" << totalIncome - totalExpense << endl;
     }
+
+void deleteAllTransactions()
+{
+    incomeCount = 0;
+    expenseCount = 0;
+    cout << "All transactions deleted successfully." << endl;
+}
+
 };
 
 int main()
@@ -294,8 +302,9 @@ int main()
         cout << "3. View Transactions" << endl;
         cout << "4. Edit a Transaction" << endl;
         cout << "5. Delete a Transaction" << endl;
-        cout << "6. View Analytics" << endl;
-        cout << "7. Save and Exit" << endl;
+        cout << "6. Delete All Transactions" << endl;
+        cout << "7. View Analytics" << endl;
+        cout << "8. Save and Exit" << endl;
 
         cout << "Enter your choice: ";
         cin >> choice;
@@ -304,7 +313,7 @@ int main()
         {
             cin.clear();
             cin.ignore(10000, '\n');
-            cout << "Enter a number1" << endl;
+            cout << "Enter a number" << endl;
             continue;
         }
 
@@ -315,10 +324,11 @@ int main()
             case 3: manager.displayTransactions(); break;
             case 4: manager.editTransaction(); break;
             case 5: manager.deleteTransaction(); break;
-            case 6: manager.displayAnalytics(); break;
-            case 7: manager.saveToFile(); break;
+            case 6: manager.deleteAllTransactions(); break;
+            case 7: manager.displayAnalytics(); break;
+            case 8: manager.saveToFile(); break;
             default: cout << "Invalid, try again." << endl;
         }
-    } while (choice != 7);
+    } while (choice != 8);
     return 0;
 }
